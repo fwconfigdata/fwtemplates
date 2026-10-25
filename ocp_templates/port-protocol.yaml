@@ -1,0 +1,7 @@
+apiserver6443:
+  port: TCP-6443
+  service: OCP API Server
+ocp_l7_ingress:
+  port: '443'
+  service: router running on openshift as ingress controller provided Layer7 ingress
+    for applications running on openshift

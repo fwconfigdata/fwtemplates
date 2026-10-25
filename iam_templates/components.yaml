@@ -1,0 +1,33 @@
+AD_ACTIVE_DIRECTORY:
+  description: active directory as authentication provider
+  exposedto:
+  - ALL
+  networkarea: SERVERFARM
+  sites:
+    prd:
+    - DR
+    - INB
+    - INM
+    - IR
+    - NL
+    - USE
+LDAP_DS:
+  description: LDAP Directory server as authentication provider
+  exposedto:
+  - ALL
+  networkarea: SERVERFARM
+  sites:
+    prd:
+    - DR
+    - INB
+    - INM
+    - IR
+    - NL
+    - USE
+    qa:
+    - DR
+    - INB
+    - INM
+    - IR
+    - NL
+    - USE

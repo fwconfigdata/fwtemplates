@@ -1,0 +1,83 @@
+OCPBM_APISERVER:
+  description: openshift api server
+  exposedto:
+  - CICD
+  networkarea: SERVERFARM
+  sites:
+    prd:
+    - INB
+    - NL
+OCPBM_L7_INGRESS:
+  description: Openshift baremetal router for http https traffic
+  exposedto:
+  - ALL
+  networkarea: SERVERFARM
+  sites:
+    prd:
+    - INB
+    - NL
+    qa:
+    - INB
+    - NL
+OCPBM_MASTER_NODES:
+  description: Openshift baremetal master nodes
+  exposedto: []
+  networkarea: SERVERFARM
+  sites:
+    qa:
+    - INB
+    - NL
+OCPBM_NODES:
+  description: openshift nodes
+  exposedto: []
+  networkarea: SERVERFARM
+  sites:
+    prd:
+    - INB
+    - NL
+    qa:
+    - INB
+    - NL
+OCP_APISERVER:
+  description: openshift api server
+  exposedto:
+  - CICD
+  networkarea: SERVERFARM
+  sites:
+    prd:
+    - INB
+    - NL
+OCP_L7_INGRESS:
+  description: Openshift router for http https traffic
+  exposedto:
+  - ALL
+  networkarea: SERVERFARM
+  sites:
+    prd:
+    - INB
+    - NL
+    qa:
+    - INB
+    - NL
+OCP_MASTER_NODES:
+  description: openshift master nodes
+  exposedto: []
+  networkarea: SERVERFARM
+  sites:
+    prd:
+    - INB
+    - NL
+    qa:
+    - INB
+    - NL
+OCP_NODES:
+  description: openshift nodes
+  exposedto: []
+  networkarea: SERVERFARM
+  sites:
+    prd:
+    - INB
+    - NL
+    qa:
+    - INB
+    - NL

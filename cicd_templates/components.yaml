@@ -1,0 +1,20 @@
+AAP:
+  description: Ansible automation platform
+  exposedto:
+  - ALL
+  networkarea: MGMTAREA
+  sites:
+    prd:
+    - DR
+    - INB
+    - INM
+    - IR
+    - NL
+    - USE
+    qa:
+    - DR
+    - INB
+    - INM
+    - IR
+    - NL
+    - USE
