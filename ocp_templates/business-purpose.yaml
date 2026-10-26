@@ -1,3 +1,5 @@
+kube_auth_authentication: login to vault using service account token for kubeauth
+  authentication
 ocp_api_access: openshift api access
 ocp_ldap_authentication: Login to openshift cluster requires console login via ingress
   controller

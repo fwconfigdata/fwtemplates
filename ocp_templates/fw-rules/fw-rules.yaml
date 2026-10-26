@@ -131,3 +131,84 @@ flowtemplates:
   envs:
   - prd
   - qa
+- appflowid: 102626T003751_05
+  source-list:
+  - group: INB-OCP_NODES-<ES>
+    envs:
+    - prd
+    - qa
+  - group: NL-OCP_NODES-<ES>
+    envs:
+    - prd
+    - qa
+  destination-list:
+  - group: INB-HASHICORP_API-<ES>
+    envs:
+    - prd
+    - qa
+  - group: NL-HASHICORP_API-<ES>
+    envs:
+    - prd
+    - qa
+  protocol-port-reference:
+  - HTTPS
+  business-purpose-reference: kube_auth_authentication
+  keywords:
+  - K1
+  envs:
+  - prd
+  - qa
+- appflowid: 102526T235433_35
+  source-list:
+  - group: INB-OCP_NODES-<ES>
+    envs:
+    - prd
+    - qa
+  - group: NL-OCP_NODES-<ES>
+    envs:
+    - prd
+    - qa
+  destination-list:
+  - group: INB-LDAP_DS-<ES>
+    envs:
+    - prd
+    - qa
+  - group: NL-LDAP_DS-<ES>
+    envs:
+    - prd
+    - qa
+  protocol-port-reference:
+  - ldaps
+  business-purpose-reference: ocp_ldap_authentication
+  keywords:
+  - K1
+  envs:
+  - prd
+  - qa
+- appflowid: 102526T235603_04
+  source-list:
+  - group: INB-OCPBM_NODES-<ES>
+    envs:
+    - prd
+    - qa
+  - group: NL-OCPBM_NODES-<ES>
+    envs:
+    - prd
+    - qa
+  destination-list:
+  - group: INB-LDAP_DS-<ES>
+    envs:
+    - prd
+    - qa
+  - group: NL-LDAP_DS-<ES>
+    envs:
+    - prd
+    - qa
+  protocol-port-reference:
+  - ldaps
+  business-purpose-reference: ocp_ldap_authentication
+  keywords:
+  - K1
+  envs:
+  - prd
+  - qa

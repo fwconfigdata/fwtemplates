@@ -2,6 +2,7 @@ OCPBM_APISERVER:
   description: openshift api server
   exposedto:
   - CICD
+  - SECURITY
   networkarea: SERVERFARM
   sites:
     prd:
@@ -29,7 +30,8 @@ OCPBM_MASTER_NODES:
     - NL
 OCPBM_NODES:
   description: openshift nodes
-  exposedto: []
+  exposedto:
+  - SECURITY
   networkarea: SERVERFARM
   sites:
     prd:
@@ -42,6 +44,7 @@ OCP_APISERVER:
   description: openshift api server
   exposedto:
   - CICD
+  - SECURITY
   networkarea: SERVERFARM
   sites:
     prd:
@@ -72,7 +75,8 @@ OCP_MASTER_NODES:
     - NL
 OCP_NODES:
   description: openshift nodes
-  exposedto: []
+  exposedto:
+  - SECURITY
   networkarea: SERVERFARM
   sites:
     prd:
