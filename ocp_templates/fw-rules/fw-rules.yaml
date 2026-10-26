@@ -1,1 +1,133 @@
-flowtemplates: []
+flowtemplates:
+- appflowid: 102526T223820_06
+  source-list:
+  - group: DR-AAP-<ES>
+    envs:
+    - prd
+  - group: INB-AAP-<ES>
+    envs:
+    - prd
+    - qa
+  - group: IR-AAP-<ES>
+    envs:
+    - prd
+  - group: NL-AAP-<ES>
+    envs:
+    - prd
+    - qa
+  destination-list:
+  - group: INB-OCP_APISERVER-<ES>
+    envs:
+    - prd
+    - qa
+  - group: NL-OCP_APISERVER-<ES>
+    envs:
+    - prd
+    - qa
+  protocol-port-reference:
+  - apiserver6443
+  business-purpose-reference: ocp_api_access
+  keywords:
+  - K1
+  envs:
+  - prd
+  - qa
+- appflowid: 102526T234211_30
+  source-list:
+  - group: DR-AAP-<ES>
+    envs:
+    - prd
+  - group: INB-AAP-<ES>
+    envs:
+    - prd
+    - qa
+  - group: IR-AAP-<ES>
+    envs:
+    - prd
+  - group: NL-AAP-<ES>
+    envs:
+    - prd
+    - qa
+  destination-list:
+  - group: INB-OCP_L7_INGRESS-<ES>
+    envs:
+    - prd
+    - qa
+  - group: NL-OCP_L7_INGRESS-<ES>
+    envs:
+    - prd
+    - qa
+  protocol-port-reference:
+  - HTTPS
+  business-purpose-reference: ocp_ldap_authentication
+  keywords:
+  - K1
+  envs:
+  - prd
+  - qa
+- appflowid: 102526T234110_04
+  source-list:
+  - group: DR-AAP-<ES>
+    envs:
+    - prd
+  - group: INB-AAP-<ES>
+    envs:
+    - prd
+    - qa
+  - group: IR-AAP-<ES>
+    envs:
+    - prd
+  - group: NL-AAP-<ES>
+    envs:
+    - prd
+    - qa
+  destination-list:
+  - group: INB-OCPBM_APISERVER-<ES>
+    envs:
+    - prd
+    - qa
+  - group: NL-OCPBM_APISERVER-<ES>
+    envs:
+    - prd
+    - qa
+  protocol-port-reference:
+  - apiserver6443
+  business-purpose-reference: ocp_api_access
+  keywords:
+  - K1
+  envs:
+  - prd
+  - qa
+- appflowid: 102526T234949_17
+  source-list:
+  - group: DR-AAP-<ES>
+    envs:
+    - prd
+  - group: INB-AAP-<ES>
+    envs:
+    - prd
+    - qa
+  - group: IR-AAP-<ES>
+    envs:
+    - prd
+  - group: NL-AAP-<ES>
+    envs:
+    - prd
+    - qa
+  destination-list:
+  - group: INB-OCPBM_APISERVER-<ES>
+    envs:
+    - prd
+    - qa
+  - group: NL-OCPBM_L7_INGRESS-<ES>
+    envs:
+    - prd
+    - qa
+  protocol-port-reference:
+  - HTTPS
+  business-purpose-reference: ocp_ldap_authentication
+  keywords:
+  - K1
+  envs:
+  - prd
+  - qa

@@ -1,2 +1,4 @@
 ocp_api_access: openshift api access
+ocp_ldap_authentication: Login to openshift cluster requires console login via ingress
+  controller
 snow_api_access: service now access api server
