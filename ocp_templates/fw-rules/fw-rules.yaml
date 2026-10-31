@@ -1,26 +1,26 @@
 flowtemplates:
 - appflowid: 102526T223820_06
   source-list:
-  - group: DR-AAP-<ES>
+  - group: DR-AAP
     envs:
     - prd
-  - group: INB-AAP-<ES>
+  - group: INB-AAP
     envs:
     - prd
     - qa
-  - group: IR-AAP-<ES>
+  - group: IR-AAP
     envs:
     - prd
-  - group: NL-AAP-<ES>
+  - group: NL-AAP
     envs:
     - prd
     - qa
   destination-list:
-  - group: INB-OCP_APISERVER-<ES>
+  - group: INB-OCP_APISERVER
     envs:
     - prd
     - qa
-  - group: NL-OCP_APISERVER-<ES>
+  - group: NL-OCP_APISERVER
     envs:
     - prd
     - qa
@@ -34,26 +34,26 @@ flowtemplates:
   - qa
 - appflowid: 102526T234211_30
   source-list:
-  - group: DR-AAP-<ES>
+  - group: DR-AAP
     envs:
     - prd
-  - group: INB-AAP-<ES>
+  - group: INB-AAP
     envs:
     - prd
     - qa
-  - group: IR-AAP-<ES>
+  - group: IR-AAP
     envs:
     - prd
-  - group: NL-AAP-<ES>
+  - group: NL-AAP
     envs:
     - prd
     - qa
   destination-list:
-  - group: INB-OCP_L7_INGRESS-<ES>
+  - group: INB-OCP_L7_INGRESS
     envs:
     - prd
     - qa
-  - group: NL-OCP_L7_INGRESS-<ES>
+  - group: NL-OCP_L7_INGRESS
     envs:
     - prd
     - qa
@@ -67,26 +67,26 @@ flowtemplates:
   - qa
 - appflowid: 102526T234110_04
   source-list:
-  - group: DR-AAP-<ES>
+  - group: DR-AAP
     envs:
     - prd
-  - group: INB-AAP-<ES>
+  - group: INB-AAP
     envs:
     - prd
     - qa
-  - group: IR-AAP-<ES>
+  - group: IR-AAP
     envs:
     - prd
-  - group: NL-AAP-<ES>
+  - group: NL-AAP
     envs:
     - prd
     - qa
   destination-list:
-  - group: INB-OCPBM_APISERVER-<ES>
+  - group: INB-OCPBM_APISERVER
     envs:
     - prd
     - qa
-  - group: NL-OCPBM_APISERVER-<ES>
+  - group: NL-OCPBM_APISERVER
     envs:
     - prd
     - qa
@@ -100,26 +100,26 @@ flowtemplates:
   - qa
 - appflowid: 102526T234949_17
   source-list:
-  - group: DR-AAP-<ES>
+  - group: DR-AAP
     envs:
     - prd
-  - group: INB-AAP-<ES>
+  - group: INB-AAP
     envs:
     - prd
     - qa
-  - group: IR-AAP-<ES>
+  - group: IR-AAP
     envs:
     - prd
-  - group: NL-AAP-<ES>
+  - group: NL-AAP
     envs:
     - prd
     - qa
   destination-list:
-  - group: INB-OCPBM_APISERVER-<ES>
+  - group: INB-OCPBM_APISERVER
     envs:
     - prd
     - qa
-  - group: NL-OCPBM_L7_INGRESS-<ES>
+  - group: NL-OCPBM_L7_INGRESS
     envs:
     - prd
     - qa
@@ -133,20 +133,20 @@ flowtemplates:
   - qa
 - appflowid: 102626T003751_05
   source-list:
-  - group: INB-OCP_NODES-<ES>
+  - group: INB-OCP_NODES
     envs:
     - prd
     - qa
-  - group: NL-OCP_NODES-<ES>
+  - group: NL-OCP_NODES
     envs:
     - prd
     - qa
   destination-list:
-  - group: INB-HASHICORP_API-<ES>
+  - group: INB-HASHICORP_API
     envs:
     - prd
     - qa
-  - group: NL-HASHICORP_API-<ES>
+  - group: NL-HASHICORP_API
     envs:
     - prd
     - qa
@@ -160,20 +160,20 @@ flowtemplates:
   - qa
 - appflowid: 102526T235433_35
   source-list:
-  - group: INB-OCP_NODES-<ES>
+  - group: INB-OCP_NODES
     envs:
     - prd
     - qa
-  - group: NL-OCP_NODES-<ES>
+  - group: NL-OCP_NODES
     envs:
     - prd
     - qa
   destination-list:
-  - group: INB-LDAP_DS-<ES>
+  - group: INB-LDAP_DS
     envs:
     - prd
     - qa
-  - group: NL-LDAP_DS-<ES>
+  - group: NL-LDAP_DS
     envs:
     - prd
     - qa
@@ -187,20 +187,20 @@ flowtemplates:
   - qa
 - appflowid: 102526T235603_04
   source-list:
-  - group: INB-OCPBM_NODES-<ES>
+  - group: INB-OCPBM_NODES
     envs:
     - prd
     - qa
-  - group: NL-OCPBM_NODES-<ES>
+  - group: NL-OCPBM_NODES
     envs:
     - prd
     - qa
   destination-list:
-  - group: INB-LDAP_DS-<ES>
+  - group: INB-LDAP_DS
     envs:
     - prd
     - qa
-  - group: NL-LDAP_DS-<ES>
+  - group: NL-LDAP_DS
     envs:
     - prd
     - qa

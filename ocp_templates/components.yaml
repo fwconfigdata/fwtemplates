@@ -73,6 +73,16 @@ OCP_MASTER_NODES:
     qa:
     - INB
     - NL
+OCP_MONITORING:
+  description: OCP nodes sending information for monitoring
+  exposedto: []
+  networkarea: SERVERFARM
+  sites:
+    prd:
+    - INB
+    - NL
+    qa:
+    - INB
 OCP_NODES:
   description: openshift nodes
   exposedto:
